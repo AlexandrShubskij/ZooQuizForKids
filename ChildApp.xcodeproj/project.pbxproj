@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		F25B13C023996433000C90FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B13BF23996433000C90FA /* AppDelegate.swift */; };
 		F25B13C223996433000C90FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B13C123996433000C90FA /* SceneDelegate.swift */; };
-		F25B13C423996433000C90FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B13C323996433000C90FA /* ViewController.swift */; };
 		F25B13C723996433000C90FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25B13C523996433000C90FA /* Main.storyboard */; };
 		F25B13CA23996433000C90FA /* ChildApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F25B13C823996433000C90FA /* ChildApp.xcdatamodeld */; };
 		F25B13CC23996437000C90FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25B13CB23996437000C90FA /* Assets.xcassets */; };
 		F25B13CF23996437000C90FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25B13CD23996437000C90FA /* LaunchScreen.storyboard */; };
+		F25B13D7239966FB000C90FA /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B13D6239966FB000C90FA /* StartPage.swift */; };
+		F25B13D923996731000C90FA /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B13D823996731000C90FA /* GamePage.swift */; };
+		F25B13DB23996744000C90FA /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B13DA23996744000C90FA /* SettingsPage.swift */; };
+		F25B13DD23998CA8000C90FA /* fonts.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25B13DC23998CA8000C90FA /* fonts.otf */; };
+		F25B13DF2399917D000C90FA /* fonts_answers.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25B13DE2399917D000C90FA /* fonts_answers.otf */; };
+		F25B13E32399C4E6000C90FA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F25B13E22399C4E6000C90FA /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F25B13BC23996433000C90FA /* ChildApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25B13BF23996433000C90FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F25B13C123996433000C90FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F25B13C323996433000C90FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F25B13C623996433000C90FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F25B13C923996433000C90FA /* ChildApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChildApp.xcdatamodel; sourceTree = "<group>"; };
 		F25B13CB23996437000C90FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F25B13CE23996437000C90FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F25B13D023996437000C90FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25B13D6239966FB000C90FA /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
+		F25B13D823996731000C90FA /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
+		F25B13DA23996744000C90FA /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		F25B13DC23998CA8000C90FA /* fonts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fonts.otf; sourceTree = "<group>"; };
+		F25B13DE2399917D000C90FA /* fonts_answers.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fonts_answers.otf; sourceTree = "<group>"; };
+		F25B13E22399C4E6000C90FA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		F25B13B323996433000C90FA = {
 			isa = PBXGroup;
 			children = (
+				F25B13E22399C4E6000C90FA /* .gitignore */,
 				F25B13BE23996433000C90FA /* ChildApp */,
 				F25B13BD23996433000C90FA /* Products */,
 			);
@@ -60,12 +71,16 @@
 			children = (
 				F25B13BF23996433000C90FA /* AppDelegate.swift */,
 				F25B13C123996433000C90FA /* SceneDelegate.swift */,
-				F25B13C323996433000C90FA /* ViewController.swift */,
+				F25B13D6239966FB000C90FA /* StartPage.swift */,
+				F25B13D823996731000C90FA /* GamePage.swift */,
+				F25B13DA23996744000C90FA /* SettingsPage.swift */,
 				F25B13C523996433000C90FA /* Main.storyboard */,
 				F25B13CB23996437000C90FA /* Assets.xcassets */,
 				F25B13CD23996437000C90FA /* LaunchScreen.storyboard */,
 				F25B13D023996437000C90FA /* Info.plist */,
 				F25B13C823996433000C90FA /* ChildApp.xcdatamodeld */,
+				F25B13DC23998CA8000C90FA /* fonts.otf */,
+				F25B13DE2399917D000C90FA /* fonts_answers.otf */,
 			);
 			path = ChildApp;
 			sourceTree = "<group>";
@@ -130,6 +145,9 @@
 			files = (
 				F25B13CF23996437000C90FA /* LaunchScreen.storyboard in Resources */,
 				F25B13CC23996437000C90FA /* Assets.xcassets in Resources */,
+				F25B13DF2399917D000C90FA /* fonts_answers.otf in Resources */,
+				F25B13DD23998CA8000C90FA /* fonts.otf in Resources */,
+				F25B13E32399C4E6000C90FA /* .gitignore in Resources */,
 				F25B13C723996433000C90FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F25B13C423996433000C90FA /* ViewController.swift in Sources */,
 				F25B13C023996433000C90FA /* AppDelegate.swift in Sources */,
+				F25B13D923996731000C90FA /* GamePage.swift in Sources */,
+				F25B13D7239966FB000C90FA /* StartPage.swift in Sources */,
+				F25B13DB23996744000C90FA /* SettingsPage.swift in Sources */,
 				F25B13CA23996433000C90FA /* ChildApp.xcdatamodeld in Sources */,
 				F25B13C223996433000C90FA /* SceneDelegate.swift in Sources */,
 			);

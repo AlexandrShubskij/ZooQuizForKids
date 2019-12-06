@@ -1,24 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Oe-M3-AcK">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="fonts.otf">
+            <string>Airfool</string>
+        </array>
+        <array key="fonts_answers.otf">
+            <string>CCRickVeitchW05</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Start Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartPage" customModule="ChildApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="D5g-a3-NWF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="c8B-j6-iRz">
+                                <rect key="frame" x="45" y="259" width="230" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="dwi-55-fxm"/>
+                                    <constraint firstAttribute="height" constant="50" id="ePx-Kg-Qz3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Airfool" family="Airfool" pointSize="45"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="ИГРАТЬ">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YuD-2A-iSe" kind="show" id="sVr-NA-kB0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI4-ek-D6L">
+                                <rect key="frame" x="75" y="349" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="8gu-KM-Xj8"/>
+                                    <constraint firstAttribute="height" constant="30" id="MMl-J1-iHK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Airfool" family="Airfool" pointSize="25"/>
+                                <state key="normal" title="НАСТРОЙКИ">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YOD-TP-Hev" kind="show" id="ngM-Bu-N66"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZOO QUIZ FOR KIDS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcf-Fz-dM2">
+                                <rect key="frame" x="30" y="74" width="260" height="125.5"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Airfool" family="Airfool" pointSize="60"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PI4-ek-D6L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3aF-51-8iX"/>
+                            <constraint firstItem="PI4-ek-D6L" firstAttribute="top" secondItem="c8B-j6-iRz" secondAttribute="bottom" constant="40" id="Cc6-86-jgX"/>
+                            <constraint firstAttribute="bottom" secondItem="D5g-a3-NWF" secondAttribute="bottom" id="GaP-zN-Om0"/>
+                            <constraint firstItem="D5g-a3-NWF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IhN-yD-32J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mcf-Fz-dM2" secondAttribute="trailing" constant="30" id="JKL-ub-shp"/>
+                            <constraint firstItem="mcf-Fz-dM2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="WRx-Fv-L5D"/>
+                            <constraint firstItem="c8B-j6-iRz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fVh-aY-xDw"/>
+                            <constraint firstItem="mcf-Fz-dM2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="p52-7J-CGY"/>
+                            <constraint firstItem="c8B-j6-iRz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tc7-f9-LA0"/>
+                            <constraint firstItem="D5g-a3-NWF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vjf-Jt-evJ"/>
+                            <constraint firstItem="D5g-a3-NWF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wba-QA-HOe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sWe-Dm-fMM"/>
+                    <connections>
+                        <outlet property="appNameLabel" destination="mcf-Fz-dM2" id="7Hp-de-gnI"/>
+                        <outlet property="playButton" destination="c8B-j6-iRz" id="wJg-Xg-1BL"/>
+                        <outlet property="settingsButton" destination="PI4-ek-D6L" id="yCl-kS-9hW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+        </scene>
+        <!--Game Page-->
+        <scene sceneID="1nR-2b-Cr5">
+            <objects>
+                <viewController id="YuD-2A-iSe" customClass="GamePage" customModule="ChildApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kCi-TU-4yD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-Qc-ZSK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSW-kX-9rn">
+                                <rect key="frame" x="20" y="64" width="280" height="164"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FjV-6L-01W">
+                                <rect key="frame" x="10" y="238" width="300" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcD-b6-zag">
+                                        <rect key="frame" x="127.5" y="0.0" width="45" height="63.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="🔈"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите на динамик, чтобы проиграть звук" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKd-Qq-v2B">
+                                        <rect key="frame" x="14" y="63.5" width="272.5" height="36.5"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="CCRickVeitchW05" family="CCRickVeitch W05(RUS BY LYAJKA)" pointSize="16"/>
+                                        <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qq7-vn-pH2"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9QU-rd-gt0">
+                                <rect key="frame" x="30" y="368" width="260" height="170"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="sn7-M2-O7I">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joD-XI-ext">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="8Hx-cB-0W8"/>
+                                                    <constraint firstAttribute="height" constant="70" id="feP-gI-bPy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CCRickVeitchW05" family="CCRickVeitch W05(RUS BY LYAJKA)" pointSize="17"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nT-G8-Kkz">
+                                                <rect key="frame" x="140" y="0.0" width="120" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Ibw-vq-qmw"/>
+                                                    <constraint firstAttribute="height" constant="70" id="LAp-tl-lcj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CCRickVeitchW05" family="CCRickVeitch W05(RUS BY LYAJKA)" pointSize="17"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="E3e-IA-rng">
+                                        <rect key="frame" x="0.0" y="100" width="260" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-lG-3mj">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="1yP-7g-Ud1"/>
+                                                    <constraint firstAttribute="width" constant="120" id="mBE-2K-vqx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CCRickVeitchW05" family="CCRickVeitch W05(RUS BY LYAJKA)" pointSize="17"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGX-SU-lHg">
+                                                <rect key="frame" x="140" y="0.0" width="120" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="oe4-Fs-DyE"/>
+                                                    <constraint firstAttribute="height" constant="70" id="rIo-WF-vsq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CCRickVeitchW05" family="CCRickVeitch W05(RUS BY LYAJKA)" pointSize="17"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LSW-kX-9rn" firstAttribute="centerX" secondItem="kCi-TU-4yD" secondAttribute="centerX" id="04F-q2-025"/>
+                            <constraint firstItem="gKB-D8-MJm" firstAttribute="bottom" secondItem="9QU-rd-gt0" secondAttribute="bottom" constant="30" id="4yZ-r4-EEP"/>
+                            <constraint firstAttribute="bottom" secondItem="Whd-Qc-ZSK" secondAttribute="bottom" id="5dA-fi-hdT"/>
+                            <constraint firstItem="FjV-6L-01W" firstAttribute="leading" secondItem="gKB-D8-MJm" secondAttribute="leading" constant="10" id="60p-w0-RF8"/>
+                            <constraint firstItem="gKB-D8-MJm" firstAttribute="trailing" secondItem="9QU-rd-gt0" secondAttribute="trailing" constant="30" id="7I9-28-QQq"/>
+                            <constraint firstItem="FjV-6L-01W" firstAttribute="top" secondItem="LSW-kX-9rn" secondAttribute="bottom" constant="10" id="9Cb-cw-uLN"/>
+                            <constraint firstItem="9QU-rd-gt0" firstAttribute="leading" secondItem="gKB-D8-MJm" secondAttribute="leading" constant="30" id="AJC-U6-wah"/>
+                            <constraint firstItem="LSW-kX-9rn" firstAttribute="leading" secondItem="gKB-D8-MJm" secondAttribute="leading" constant="20" id="ZhY-Ma-WBm"/>
+                            <constraint firstItem="Whd-Qc-ZSK" firstAttribute="leading" secondItem="gKB-D8-MJm" secondAttribute="leading" id="b2Q-SN-nFm"/>
+                            <constraint firstItem="9QU-rd-gt0" firstAttribute="top" secondItem="FjV-6L-01W" secondAttribute="bottom" constant="30" id="hSv-2J-SPo"/>
+                            <constraint firstItem="LSW-kX-9rn" firstAttribute="top" secondItem="gKB-D8-MJm" secondAttribute="top" constant="20" id="jEg-KE-rJU"/>
+                            <constraint firstItem="Whd-Qc-ZSK" firstAttribute="trailing" secondItem="gKB-D8-MJm" secondAttribute="trailing" id="lRw-Bo-QU0"/>
+                            <constraint firstItem="gKB-D8-MJm" firstAttribute="trailing" secondItem="FjV-6L-01W" secondAttribute="trailing" constant="10" id="tA0-HQ-FQG"/>
+                            <constraint firstItem="gKB-D8-MJm" firstAttribute="trailing" secondItem="LSW-kX-9rn" secondAttribute="trailing" constant="20" id="xfe-xS-GCo"/>
+                            <constraint firstItem="Whd-Qc-ZSK" firstAttribute="top" secondItem="kCi-TU-4yD" secondAttribute="top" id="y5c-Cn-fjr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gKB-D8-MJm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nqK-Lt-q4W">
+                        <barButtonItem key="backBarButtonItem" title="НАЗАД" id="rdG-d3-B1S"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerFourButton" destination="OGX-SU-lHg" id="P03-9n-Ner"/>
+                        <outlet property="answerOneButton" destination="joD-XI-ext" id="fre-Vg-KUh"/>
+                        <outlet property="answerThreeButton" destination="7qe-lG-3mj" id="Gor-Yy-Ptl"/>
+                        <outlet property="answerTwoButton" destination="2nT-G8-Kkz" id="HP6-Sq-21K"/>
+                        <outlet property="dynamicButton" destination="JcD-b6-zag" id="7Ny-Zo-KNp"/>
+                        <outlet property="messageLabel" destination="QKd-Qq-v2B" id="B27-F7-FzF"/>
+                        <outlet property="zooImageView" destination="LSW-kX-9rn" id="4sh-xh-ajG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1HW-wf-cD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.68115942029" y="-192.1875"/>
+        </scene>
+        <!--Settings Page-->
+        <scene sceneID="XZs-nx-cFC">
+            <objects>
+                <viewController id="YOD-TP-Hev" customClass="SettingsPage" customModule="ChildApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DW2-pm-mYo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="EoS-gj-ezf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-LR-NHQ">
+                                <rect key="frame" x="50" y="144" width="220" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bxC-Od-sDn">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЗВУК" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS5-hD-F6g">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="42"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Airfool" family="Airfool" pointSize="40"/>
+                                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TWt-sk-xoW">
+                                                <rect key="frame" x="171" y="5.5" width="51" height="31"/>
+                                                <color key="onTintColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="3PH-9a-Gbq">
+                                        <rect key="frame" x="0.0" y="88" width="220" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВИБРО" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRy-uQ-UxL">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="42"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Airfool" family="Airfool" pointSize="40"/>
+                                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEu-CU-unm">
+                                                <rect key="frame" x="171" y="5.5" width="51" height="31"/>
+                                                <color key="onTintColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EoS-gj-ezf" firstAttribute="trailing" secondItem="Wb0-vE-35G" secondAttribute="trailing" id="9Yh-bY-oTT"/>
+                            <constraint firstItem="Wb0-vE-35G" firstAttribute="trailing" secondItem="7WW-LR-NHQ" secondAttribute="trailing" constant="50" id="EIq-9I-jYl"/>
+                            <constraint firstItem="EoS-gj-ezf" firstAttribute="top" secondItem="DW2-pm-mYo" secondAttribute="top" id="McH-f5-hlz"/>
+                            <constraint firstItem="7WW-LR-NHQ" firstAttribute="leading" secondItem="Wb0-vE-35G" secondAttribute="leading" constant="50" id="Oo5-gy-TPa"/>
+                            <constraint firstAttribute="bottom" secondItem="EoS-gj-ezf" secondAttribute="bottom" id="TbX-aM-DZK"/>
+                            <constraint firstItem="7WW-LR-NHQ" firstAttribute="top" secondItem="Wb0-vE-35G" secondAttribute="top" constant="100" id="oOY-zr-R6a"/>
+                            <constraint firstItem="EoS-gj-ezf" firstAttribute="leading" secondItem="Wb0-vE-35G" secondAttribute="leading" id="zES-CS-a2F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wb0-vE-35G"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2B0-hb-5mI"/>
+                    <connections>
+                        <outlet property="soundLabel" destination="lS5-hD-F6g" id="dhz-92-J9Z"/>
+                        <outlet property="soundSwitch" destination="TWt-sk-xoW" id="rkL-Vr-vy6"/>
+                        <outlet property="vibrationLabel" destination="BRy-uQ-UxL" id="KbL-Y6-ZvM"/>
+                        <outlet property="vibrationSwitch" destination="KEu-CU-unm" id="qOD-LV-xA4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hy8-O2-PPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.68115942029" y="487.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iPj-cG-IDc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Oe-M3-AcK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LPq-KW-xWg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="CCRickVeitchW05" family="CCRickVeitch W05(RUS BY LYAJKA)" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KfM-41-qch"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxr-b9-o7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="512" height="512"/>
+    </resources>
 </document>
